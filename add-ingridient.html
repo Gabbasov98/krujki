@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить ингредиент</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/tagify.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <section class='add'>
+        <div class='custom-container'>
+            <div class="add__inner">
+                <div class="add__left">
+                    <div class="profile-edit">
+                        <p class="profile-edit__title">Добавить ингредиент</p>
+                        <div class="profile-edit__form-group">
+                            <label for="">Название</label>
+                            <input type="text" placeholder="Название ингредиента">
+                        </div>
+                        <div class="profile-edit__form-group-hint profile-edit__form-group-hint--static">Введите название ингредиента, как оно будет отображаться в вашем рецепте</div>
+                    </div>
+                    <div class="add__tag-group">
+                        <div class="add__tag-group-item">
+                            <div class="add__tags">
+                                <div class="add__tags-title">Добавьте подходящие совпадения </div>
+                                <div class="add__tags-desc">Добавьте теги по которым будет происходить поиск товаров в ретейлерах.</div>
+                                <input name="tags" id="tag" value="курин,грудк">
+                            </div>
+                        </div>
+                        <div class="add__tag-group-item">
+                            <div class="add__tags add__tags--red">
+                                <div class="add__tags-title">Добавьте исключения</div>
+                                <div class="add__tags-desc">Добавьте теги по которым будут отсеиваться товары при поиске</div>
+                                <input name="tags" id="tag2" value="заморож,готов">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add__new">
+                        <i>
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.50007 2.86364L8.50007 8.5M8.50007 8.5L8.50008 14.1364M8.50007 8.5L14.1364 8.50001M8.50007 8.5L2.86371 8.5" stroke="white" stroke-width="1.40909"/>
+                            </svg>
+                        </i>
+                        <span>добавить дополнительне теги</span>
+                    </button>
+                    <div class="profile-edit__form-group">
+                        <label for="">Мера измерения</label>
+                        <div class="profile-edit__form-group-select">
+                            <select name="" id="" style="width: 90px;">
+                                <option selected>гр</option>
+                                <option>гр 2</option>
+                                <option>гр 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add__group">
+                        <div class="add__group-title">Персоны</div>
+                        <div class="add__group-desc">Здесь вы выбираете количество персон и соотвествующему им количество ингредиентов</div>
+                        <div class="add__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z" fill="#FF8A35"/>
+                            </svg>
+                            <input type="text" class="add__item-num">
+                            <input type="text" class="add__item-weight" placeholder="введите вес">
+                            <span>гр.</span>
+                        </div>
+                        <div class="add__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z" fill="#FF8A35"/>
+                            </svg>
+                            <input type="text" class="add__item-num">
+                            <input type="text" class="add__item-weight" placeholder="введите вес">
+                            <span>гр.</span>
+                        </div>
+                    </div>
+                    <div class="add__buttons">
+                        <button class="profile-edit__form-btn">добавить</button>
+                        <button class="add__buttons-close">закрыть</button>
+                    </div>
+                </div>
+                <div class="add__right">
+                    <div class="add__find">
+                        <div class="add__find-top">
+                            <div class="add__find-title">Найдено</div>
+                            <div class="add__find-badge">23 товара</div>
+                        </div>
+                        <div class="add__find-list">
+                            <div class="add__find-items">
+                                <div class="add__find-item">
+                                    картофель, мытый фаосванный по 2,5 кг в сетке “Империя”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель бэбы “Вилд Фарм”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель, мытый фаосванный по 2,5 кг в сетке “Империя”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель бэбы “Вилд Фарм”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель, мытый фаосванный по 2,5 кг в сетке “Империя”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель бэбы “Вилд Фарм”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель, мытый фаосванный по 2,5 кг в сетке “Империя”
+                                </div>
+                                <div class="add__find-item">
+                                    картофель бэбы “Вилд Фарм”
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/tagify.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

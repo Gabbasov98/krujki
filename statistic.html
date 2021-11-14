@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="profile-sidebar__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar-bg"></div>
+                <div class="profile-sidebar">
+
+                    <a href="" class="profile-sidebar__link">
+                        <span>
+                            Редактировать профиль
+                        </span>
+                        <img src="img/edit-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Создать рецепт</span>
+                        <img src="img/add-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Рейтинг и друзья</span>
+                        <img src="img/referal-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Финансы</span>
+                        <img src="img/finance.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Выйти</span>
+                        <img src="img/logout-green.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-content">
+                    <div class="stat">
+                        <p class="profile__title">Статистика</p>
+                        <div class="profile-edit__form-group">
+                            <label for="">Период</label>
+                            <div class="profile-edit__form-group-select">
+                                <select name="" id="">
+                                    <option value="09.08.2021 - 31.10.2021">09.08.2021 - 31.10.2021</option>
+                                    <option value="09.08.2021 - 31.10.2021 2">09.08.2021 - 31.10.2021 2</option>
+                                    <option value="09.08.2021 - 31.10.2021 3">09.08.2021 - 31.10.2021 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="profile-edit__form-group">
+                            <label for="">Отчет</label>
+                            <div>
+                                <div class="stat__radio-group">
+                                    <div class="stat__radio">
+                                        <input type='radio' class='radio' id='stat1' name='stat' />
+                                        <label for='stat1'>детализация по времени</label>
+                                    </div>
+                                    <div class="stat__radio">
+                                        <input type='radio' class='radio' id='stat2' name='stat' />
+                                        <label for='stat2'>общие переходы</label>
+                                    </div>
+                                    <div class="stat__radio">
+                                        <input type='radio' class='radio' id='stat3' name='stat' />
+                                        <label for='stat3'>общие продажи</label>
+                                    </div>
+                                </div>
+                                <div class="stat__radio-select">
+                                    <div class="stat__radio">
+                                        <input type='radio' class='radio' id='stat4' name='stat' />
+                                        <label for='stat4'>продажи по магазину</label>
+                                    </div>
+                                    <select name="" id="">
+                                        <option selected disabled hidden value="выбрать магазин">выбрать магазин</option>
+                                        <option value="выбрать магазин 1">выбрать магазин 1</option>
+                                        <option value="выбрать магазин 2">выбрать магазин 2</option>
+                                        <option value="выбрать магазин 3">выбрать магазин 3</option>
+                                    </select>
+                                </div>
+                                <div class="stat__radio-select">
+                                    <div class="stat__radio">
+                                        <input type='radio' class='radio' id='stat5' name='stat' />
+                                        <label for='stat5'>продажи по бренду</label>
+                                    </div>
+                                    <select name="" id="">
+                                        <option selected disabled hidden value="выбрать магазин">выбрать магазин</option>
+                                        <option value="продажи по бренду 1">продажи по бренду 1</option>
+                                        <option value="продажи по бренду 2">продажи по бренду 2</option>
+                                        <option value="продажи по бренду 3">продажи по бренду 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="stat__btn">показать</button>
+                        <div class="stat__charts">
+                            <div class="stat__chart">
+                                <div class="stat__chart-title">Количество просмотров</div>
+                                <div class="stat__chart-date">09.08.2021 - 31.10.2021</div>
+                                <div class="stat__chart-block">
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:220px;">512</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #6B53FD;color:#fff; width:120px;">240</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:190px;">480</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:140px;">360</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:170px;">440</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #FF8A35;width:220px;">640</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:200px;">480</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:125px;">360</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat__chart">
+                                <div class="stat__chart-title">Количество просмотров</div>
+                                <div class="stat__chart-date">09.08.2021 - 31.10.2021</div>
+                                <div class="stat__chart-block">
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:220px;">512</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #6B53FD;color:#fff; width:120px;">240</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:190px;">480</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:140px;">360</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:170px;">440</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #FF8A35;width:220px;">640</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:200px;">480</div>
+                                    </div>
+                                    <div class="stat__chart-item">
+                                        <div class="stat__chart-item-label">курица с ананасами</div>
+                                        <div class="stat__chart-item-axis" style="background: #ffecdf;width:125px;">360</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

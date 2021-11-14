@@ -1,0 +1,192 @@
+.header {
+    background: #FFFCFC;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.1);
+    padding: 30px 0 20px;
+    height: 111px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        width: 210px;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 14px;
+        color: $blackLight;
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 25px;
+        color: #5A5A75;
+        margin-left: 28px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        &-inner {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__cart {
+        background: #FF8A35;
+        border-radius: 16px;
+        padding: 0 7px 0 15px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: 30px;
+        &-icon {
+            margin-right: 17px;
+        }
+        &-num {
+            height: 21px;
+            display: flex;
+            align-items: center;
+            padding: 0 11.5px;
+            background: #FFFFFF;
+            border-radius: 16px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #FF8A35;
+        }
+    }
+    &__burger {
+        display: none;
+    }
+    &__city {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        color: #6B53FD;
+        svg {
+            margin-right: 6px;
+        }
+    }
+}
+
+@media (max-width: 1460px) {
+    .header {
+        &__cart {
+            margin-left: 80px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__cart {
+            margin-left: 40px;
+        }
+        &-nav {
+            &__item {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__desc {
+            width: 400px;
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 30px 0 10px;
+        height: 98px;
+        &__inner {
+            justify-content: center;
+            position: relative;
+        }
+        &__left {
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+        &-nav {
+            display: block;
+            &__item {
+                display: block;
+                text-align: center;
+                margin-bottom: 15px;
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__cart {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 56px;
+            height: 28px;
+            &-num {
+                display: none;
+            }
+        }
+        &__city {
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        &__logo {
+            margin: 0 auto;
+            width: 117px;
+        }
+        &__title {
+            margin-top: 5px;
+        }
+        &__left {
+            display: block;
+        }
+        &__desc {
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 16px;
+            color: #5A5A75;
+            margin-top: 11px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        // z-index: 6;
+        &__title {
+            font-size: 19px;
+            line-height: 26px;
+            margin-top: 10px;
+        }
+        &__desc {
+            width: unset;
+            max-width: 400px;
+        }
+        &__right {
+            &-inner {
+                width: 100%;
+            }
+        }
+    }
+}

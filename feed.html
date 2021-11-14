@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="header__city" data-toggle="modal" data-target="#cityModal">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 5.80767C11 9.54696 6 12.7521 6 12.7521C6 12.7521 1 9.54696 1 5.80767C1 4.53259 1.52678 3.30975 2.46447 2.40813C3.40215 1.50652 4.67392 1 6 1C7.32608 1 8.59785 1.50652 9.53553 2.40813C10.4732 3.30975 11 4.53259 11 5.80767Z" stroke="#6B53FD" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.00016 7.41031C6.92064 7.41031 7.66683 6.69282 7.66683 5.80776C7.66683 4.92269 6.92064 4.2052 6.00016 4.2052C5.07969 4.2052 4.3335 4.92269 4.3335 5.80776C4.3335 6.69282 5.07969 7.41031 6.00016 7.41031Z" stroke="#6B53FD" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Москва</span>
+                    </button>
+                    <a href="" class="header__cart">
+                        <span class="header__cart-icon">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_315:3483)">
+                                <path d="M7.12492 17.9166C7.56214 17.9166 7.91658 17.5622 7.91658 17.125C7.91658 16.6878 7.56214 16.3333 7.12492 16.3333C6.68769 16.3333 6.33325 16.6878 6.33325 17.125C6.33325 17.5622 6.68769 17.9166 7.12492 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8334 17.9166C16.2706 17.9166 16.6251 17.5622 16.6251 17.125C16.6251 16.6878 16.2706 16.3333 15.8334 16.3333C15.3962 16.3333 15.0417 16.6878 15.0417 17.125C15.0417 17.5622 15.3962 17.9166 15.8334 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.791748 1.29169H3.95841L6.08008 11.8921C6.15247 12.2566 6.35076 12.584 6.64022 12.817C6.92968 13.05 7.29188 13.1738 7.66341 13.1667H15.3584C15.7299 13.1738 16.0921 13.05 16.3816 12.817C16.6711 12.584 16.8694 12.2566 16.9417 11.8921L18.2084 5.25002H4.75008" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_315:3483">
+                                <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="header__cart-num">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='bloger'>
+        <div class='custom-container'>
+            <img src="img/bloger-bg.png" alt="" class="bloger__bg">
+            <div class='bloger__inner'>
+                <div class="bloger__top">
+                    <div class="bloger__avatar">
+                        <img src="img/avatar2.jpg" alt="">
+                    </div>
+                    <div class="bloger__data">
+                        <div class="bloger__nickname">@innaloveeat</div>
+                        <div class="bloger__name">Инна Вкуснова</div>
+                        <div class="bloger__info">
+                            Я мама фудблогер с большим стажем, <br> я очень вкусно готовлю
+                        </div>
+                        <div class="bloger__socials">
+                            <a href="">
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6311 1.98944C19.8724 2.32563 19.0574 2.55278 18.2006 2.65546C19.0847 2.12645 19.7461 1.29386 20.0614 0.313036C19.2308 0.806407 18.3217 1.15369 17.3737 1.33978C16.7362 0.659098 15.8918 0.207933 14.9716 0.0563275C14.0514 -0.0952777 13.1069 0.0611591 12.2848 0.50135C11.4626 0.941541 10.8087 1.64086 10.4247 2.49073C10.0407 3.3406 9.94806 4.29347 10.1611 5.20141C8.47805 5.11691 6.83157 4.67945 5.32853 3.91744C3.82549 3.15544 2.49947 2.0859 1.43653 0.77825C1.07308 1.4052 0.864098 2.13209 0.864098 2.90624C0.863692 3.60314 1.03531 4.28938 1.36373 4.90405C1.69214 5.51872 2.16721 6.04283 2.74676 6.42986C2.07463 6.40848 1.41733 6.22686 0.82957 5.90014V5.95466C0.829502 6.9321 1.16761 7.87946 1.78651 8.63599C2.40542 9.39252 3.26701 9.91163 4.22508 10.1052C3.60157 10.274 2.94787 10.2988 2.31335 10.1779C2.58366 11.019 3.1102 11.7544 3.81926 12.2813C4.52832 12.8082 5.38441 13.1002 6.26766 13.1164C4.76829 14.2934 2.91657 14.9319 1.01039 14.9291C0.672725 14.9292 0.33535 14.9095 0 14.87C1.93488 16.1141 4.18723 16.7743 6.48755 16.7718C14.2744 16.7718 18.5313 10.3224 18.5313 4.72893C18.5313 4.5472 18.5268 4.36366 18.5186 4.18194C19.3466 3.58314 20.0613 2.84163 20.6293 1.99217L20.6311 1.98944Z" fill="#C4C9D3"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.548828 10.9643C0.548828 16.3851 4.48588 20.8928 9.63503 21.8069V13.9319H6.90917V10.9034H9.63503V8.48015C9.63503 5.75429 11.3914 4.24053 13.8756 4.24053C14.6624 4.24053 15.5111 4.36138 16.2979 4.48222V7.26896H14.905C13.5721 7.26896 13.2695 7.93498 13.2695 8.78363V10.9034H16.1771L15.6928 13.9319H13.2695V21.8069C18.4187 20.8928 22.3557 16.386 22.3557 10.9643C22.3557 4.93381 17.4492 0 11.4523 0C5.45538 0 0.548828 4.93381 0.548828 10.9643Z" fill="#C4C9D3"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.4972 6.99851C8.56916 6.99851 6.99575 8.57195 6.99575 10.5C6.99575 12.4281 8.56916 14.0015 10.4972 14.0015C12.4252 14.0015 13.9986 12.4281 13.9986 10.5C13.9986 8.57195 12.4252 6.99851 10.4972 6.99851ZM20.9988 10.5C20.9988 9.05002 21.012 7.61317 20.9305 6.16582C20.8491 4.48469 20.4656 2.99268 19.2363 1.76335C18.0044 0.53139 16.515 0.150507 14.8339 0.0690774C13.3839 -0.0123526 11.9471 0.000781319 10.4998 0.000781319C9.04985 0.000781319 7.61303 -0.0123526 6.16571 0.0690774C4.4846 0.150507 2.99262 0.534016 1.76331 1.76335C0.53138 2.9953 0.150505 4.48469 0.0690761 6.16582C-0.0123524 7.6158 0.000781304 9.05265 0.000781304 10.5C0.000781304 11.9474 -0.0123524 13.3868 0.0690761 14.8342C0.150505 16.5153 0.534007 18.0073 1.76331 19.2367C2.99525 20.4686 4.4846 20.8495 6.16571 20.9309C7.61566 21.0124 9.05248 20.9992 10.4998 20.9992C11.9498 20.9992 13.3866 21.0124 14.8339 20.9309C16.515 20.8495 18.007 20.466 19.2363 19.2367C20.4682 18.0047 20.8491 16.5153 20.9305 14.8342C21.0146 13.3868 20.9988 11.95 20.9988 10.5ZM10.4972 15.8875C7.51584 15.8875 5.10976 13.4814 5.10976 10.5C5.10976 7.51861 7.51584 5.11248 10.4972 5.11248C13.4785 5.11248 15.8846 7.51861 15.8846 10.5C15.8846 13.4814 13.4785 15.8875 10.4972 15.8875ZM16.1052 6.15006C15.4092 6.15006 14.847 5.58793 14.847 4.89184C14.847 4.19574 15.4092 3.63361 16.1052 3.63361C16.8013 3.63361 17.3634 4.19574 17.3634 4.89184C17.3636 5.05713 17.3312 5.22083 17.2681 5.37358C17.2049 5.52633 17.1123 5.66512 16.9954 5.782C16.8785 5.89888 16.7397 5.99155 16.587 6.05471C16.4342 6.11787 16.2705 6.15027 16.1052 6.15006Z" fill="#C4C9D3"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.8737 2.10685C19.7597 1.70026 19.5377 1.33215 19.2312 1.04166C18.9161 0.742241 18.5299 0.528057 18.109 0.419328C16.5339 0.00415906 10.2233 0.00415915 10.2233 0.00415915C7.59248 -0.0257728 4.96231 0.105875 2.34765 0.39836C1.92677 0.515122 1.54126 0.734091 1.22543 1.03579C0.915102 1.33438 0.690324 1.70258 0.572902 2.10601C0.290832 3.62556 0.153784 5.16848 0.163604 6.71397C0.153539 8.25806 0.290251 9.80048 0.572902 11.3219C0.687807 11.7237 0.911747 12.0902 1.22291 12.3863C1.53408 12.6823 1.92157 12.8962 2.34765 13.0094C3.94374 13.4238 10.2233 13.4238 10.2233 13.4238C12.8574 13.4537 15.491 13.3221 18.109 13.0296C18.5299 12.9208 18.9161 12.7067 19.2312 12.4072C19.5415 12.1112 19.7621 11.743 19.8728 11.3421C20.1623 9.82309 20.303 8.27953 20.293 6.73326C20.3148 5.18044 20.1742 3.62961 19.8737 2.10601V2.10685ZM8.21705 9.58576V3.84301L13.4675 6.71481L8.21705 9.58576Z" fill="#C4C9D3"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 6.64185V10.793C21 11.0132 20.9149 11.2244 20.7634 11.3801C20.612 11.5358 20.4065 11.6232 20.1923 11.6232C18.5051 11.627 16.8422 11.2101 15.3462 10.4082V14.1139C15.3459 15.6143 14.9294 17.0836 14.1454 18.3492C13.3614 19.6148 12.2424 20.6242 10.9199 21.2591C9.59731 21.894 8.12602 22.1279 6.67866 21.9335C5.2313 21.739 3.86792 21.1243 2.74854 20.1613C1.62915 19.1984 0.8002 17.9272 0.358964 16.497C-0.0822712 15.0668 -0.117482 13.5369 0.257465 12.0868C0.632412 10.6367 1.40196 9.3267 2.47579 8.31042C3.54963 7.29414 4.8832 6.61378 6.31999 6.3492C6.43621 6.32793 6.55556 6.33311 6.66963 6.36438C6.78369 6.39564 6.88971 6.45222 6.9802 6.53014C7.0707 6.60807 7.14347 6.70543 7.19341 6.81539C7.24335 6.92534 7.26923 7.04521 7.26923 7.16656V11.4878C7.26923 11.6448 7.22591 11.7986 7.1443 11.9314C7.06268 12.0641 6.94612 12.1703 6.80814 12.2377C6.4815 12.3968 6.20237 12.643 5.99989 12.9508C5.7974 13.2586 5.67898 13.6165 5.65698 13.9874C5.63498 14.3582 5.71021 14.7283 5.87482 15.0591C6.03942 15.3899 6.28737 15.6692 6.59279 15.8679C6.89821 16.0665 7.24991 16.1773 7.61119 16.1887C7.97246 16.2 8.33008 16.1114 8.64671 15.9323C8.96335 15.7531 9.2274 15.4899 9.41132 15.17C9.59523 14.8502 9.69227 14.4855 9.69231 14.1139V0.830232C9.69231 0.61004 9.7774 0.398868 9.92887 0.243169C10.0803 0.0874705 10.2858 0 10.5 0H14.5385C14.7527 0 14.9581 0.0874705 15.1096 0.243169C15.2611 0.398868 15.3462 0.61004 15.3462 0.830232C15.3476 2.15092 15.8586 3.4171 16.7672 4.35097C17.6757 5.28484 18.9075 5.81014 20.1923 5.81162C20.4065 5.81162 20.612 5.89909 20.7634 6.05479C20.9149 6.21049 21 6.42166 21 6.64185Z" fill="#C4C9D3"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_318:4592)">
+                                    <path d="M14.1047 0.479126C9.73567 0.479126 6.18404 4.03144 6.18404 8.39981C6.18404 12.7538 9.73636 16.2951 14.1047 16.2951C18.4587 16.2951 22 12.7538 22 8.39981C22 4.03075 18.4587 0.479126 14.1047 0.479126ZM0.00341797 21.5737H3.87061V0.479126H0.00341797V21.5737Z" fill="#C4C9D3"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_318:4592">
+                                    <rect width="22" height="22" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bloger__stat">
+                        <div class="bloger__stat-item">
+                            <div>
+                                <div class="bloger__stat-num">34</div>
+                                <div class="bloger__stat-text">рецепта</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='feed'>
+        <div class='custom-container'>
+            <div class="feed__tags">
+                <div class="feed__tag">острое</div>
+                <div class="feed__tag">вторые блюда</div>
+                <div class="feed__tag">макароны</div>
+                <div class="feed__tag">легкий перекус</div>
+                <div class="feed__tag">быстро готовить</div>
+            </div>
+            <div class='feed__inner'>
+                <div class="feed__wrap">
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__item">
+                        <div class="card">
+                            <div class="card__dropdown">
+                                <div class="card__dropdown-inner">
+                                    <a href="" class="card__dropdown-link">Редактировать</a>
+                                    <a href="" class="card__dropdown-link">Отправить в черновики</a>
+                                    <span class="card__dropdown-link card__dropdown-link--delete">Удалить</span>
+                                </div>
+                            </div>
+                            <div class="card__top">
+                                <div class="card__logo">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="card__top-content">
+                                    <div class="card__name">yourdoctor</div>
+                                    <div class="card__profession">терапевт</div>
+                                </div>
+                                <div class="card__nav">
+                                    <a href="" class="card__nav-link">
+                                        <svg width="14" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8.50933V14.5169C1 14.9152 1.15823 15.2972 1.43989 15.5789C1.72155 15.8605 2.10356 16.0188 2.50189 16.0188H11.5132C11.9115 16.0188 12.2935 15.8605 12.5752 15.5789C12.8569 15.2972 13.0151 14.9152 13.0151 14.5169V8.50933" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.011 4.00376L7.00719 0.99999L4.00342 4.00376" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.00732 0.99999V10.7623" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="card__more">
+                                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00011 1.77778C1.00011 2.20733 1.34833 2.55556 1.77789 2.55556C2.20744 2.55556 2.55566 2.20733 2.55566 1.77778C2.55566 1.34822 2.20744 1 1.77789 1C1.34833 1 1.00011 1.34822 1.00011 1.77778Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 8C1.00011 8.42955 1.34833 8.77778 1.77789 8.77778C2.20744 8.77778 2.55566 8.42955 2.55566 8C2.55566 7.57044 2.20744 7.22222 1.77789 7.22222C1.34833 7.22222 1.00011 7.57044 1.00011 8Z" stroke="#5A5A75" stroke-width="2"/>
+                                            <path d="M1.00011 14.2222C1.00011 14.6518 1.34833 15 1.77789 15C2.20744 15 2.55566 14.6518 2.55566 14.2222C2.55566 13.7927 2.20744 13.4444 1.77789 13.4444C1.34833 13.4444 1.00011 13.7927 1.00011 14.2222Z" stroke="#5A5A75" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__img">
+                                <img src="img/recipe1.jpg" alt="">
+                            </div>
+                            <div class="card__tags">
+                                <a class="card__tag" href="">острое</a>
+                                <a class="card__tag" href="">вторые блюда</a>
+                                <a class="card__tag" href="">легкий перекус</a>
+                                <a class="card__tag" href="">быстро готовить</a>
+                                <a class="card__tag" href="">макароны</a>
+                            </div>
+                            <div class="card__title">Кальмары, фаршированные кускусом</div>
+                            <div class="card__desc">
+                                Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                            </div>
+                            <div class="card__info">
+                                <div class="card__info-item">
+                                    <img src="img/time.png" alt="">
+                                    <span>1 час 40 мин</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/hat.svg" alt="">
+                                    <span>сложно</span>
+                                </div>
+                                <div class="card__info-item">
+                                    <img src="img/fire.svg" alt="">
+                                    <span>55 кал</span>
+                                </div>
+                            </div>
+                            <div class="card__cart">
+                                <div class='card__calc ccalc'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.96722 8.92773H13.7017" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9162 4.06055V13.795" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.04895 8.92773H13.7834" stroke="#51B1A6" stroke-width="1.66876" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="card__cart-add">
+                                    <span>от 1349 руб.</span>
+                                    <img src="img/cart.svg" alt="">                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id='cityModal' class='modal modal-city fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-city__subtitle">Ваш город</div>
+            <div class="modal-city__title">Москва</div>
+            <div class="modal-city__buttons">
+                <button class="modal-city__yes" data-dismiss='modal'>угадали!</button>
+                <button class="modal-city__no">нет</button>
+            </div>
+        </div>
+    </div>
+
+    <div id='cityModal2' class='modal modal-city modal-city2 fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form action="" class="modal-city__form">
+                <div class="modal-city__form-group">
+                    <label for="">Введите ваш город</label>
+                    <input type="text">
+                </div>
+                <div class="modal-city__form-group">
+                    <label for="">Введите вашу улицу</label>
+                    <input type="text">
+                </div>
+                <div class="modal-city__form-group">
+                    <label for="">Введите номер дома</label>
+                    <input type="text">
+                </div>
+                <button data-dismiss='modal' type="button" class="modal-city__yes" data-dismiss='modal'>сохранить</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

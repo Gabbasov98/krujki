@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="header__city" data-toggle="modal" data-target="#cityModal">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 5.80767C11 9.54696 6 12.7521 6 12.7521C6 12.7521 1 9.54696 1 5.80767C1 4.53259 1.52678 3.30975 2.46447 2.40813C3.40215 1.50652 4.67392 1 6 1C7.32608 1 8.59785 1.50652 9.53553 2.40813C10.4732 3.30975 11 4.53259 11 5.80767Z" stroke="#6B53FD" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.00016 7.41031C6.92064 7.41031 7.66683 6.69282 7.66683 5.80776C7.66683 4.92269 6.92064 4.2052 6.00016 4.2052C5.07969 4.2052 4.3335 4.92269 4.3335 5.80776C4.3335 6.69282 5.07969 7.41031 6.00016 7.41031Z" stroke="#6B53FD" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Москва</span>
+                    </button>
+                    <a href="" class="header__cart">
+                        <span class="header__cart-icon">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_315:3483)">
+                                <path d="M7.12492 17.9166C7.56214 17.9166 7.91658 17.5622 7.91658 17.125C7.91658 16.6878 7.56214 16.3333 7.12492 16.3333C6.68769 16.3333 6.33325 16.6878 6.33325 17.125C6.33325 17.5622 6.68769 17.9166 7.12492 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8334 17.9166C16.2706 17.9166 16.6251 17.5622 16.6251 17.125C16.6251 16.6878 16.2706 16.3333 15.8334 16.3333C15.3962 16.3333 15.0417 16.6878 15.0417 17.125C15.0417 17.5622 15.3962 17.9166 15.8334 17.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.791748 1.29169H3.95841L6.08008 11.8921C6.15247 12.2566 6.35076 12.584 6.64022 12.817C6.92968 13.05 7.29188 13.1738 7.66341 13.1667H15.3584C15.7299 13.1738 16.0921 13.05 16.3816 12.817C16.6711 12.584 16.8694 12.2566 16.9417 11.8921L18.2084 5.25002H4.75008" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_315:3483">
+                                <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="header__cart-num">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='product-detail'>
+        <div class='custom-container'>
+            <div class='product-detail__top'>
+                <a href="" class="product-detail__top-back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 19L5 12L12 5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span>назад к рецептам</span>
+                </a>
+                <div class="product-detail__top-right">
+                    <button class="product-detail__top-share product-detail__top-nav-btn">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.551453 8.57751V14.5851C0.551453 14.9834 0.709687 15.3654 0.991345 15.6471C1.273 15.9287 1.65501 16.0869 2.05334 16.0869H11.0647C11.463 16.0869 11.845 15.9287 12.1267 15.6471C12.4083 15.3654 12.5665 14.9834 12.5665 14.5851V8.57751" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M9.56254 4.07201L6.55877 1.06824L3.55499 4.07201" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.55902 1.06824V10.8305" stroke="#5A5A75" stroke-width="0.834381" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <span>поделиться</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-detail__flex-mob">
+                <div class="product-detail__info">
+                    <div class="product-detail__info-left">
+                        <div class="product-detail__info-subtitle">второе блюдо</div>
+                        <div class="product-detail__info-title">Кальмары, фаршированные кус-кусом</div>
+                    </div>
+                    <div class="product-detail__info-right">
+                        <div class="product-detail__info-select">
+                            <select name="" id="" class="custom-select">
+                                <option selected value="">на 2 персоны</option>
+                                <option value="">на 3 персоны</option>
+                                <option value="">на 5 персон</option>
+                            </select>
+                        </div>
+                        <button class="product-detail__info-btn ">
+                            <span><i>от</i> 1349 руб.</span>
+                            <img src="img/cart.svg" alt="">                                        
+                        </button>
+                    </div>
+                </div>
+                <div class="product-detail__img">
+                    <img src="img/recipe-detail.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="product-detail__flex-mob">
+                <div class="product-detail__info2">
+                    <div class="product-detail__cooking">
+                        <div class="product-detail__cooking-item">
+                            <img src="img/time.png" alt="">
+                            <span>1 час 40 мин</span>
+                        </div>
+                        <div class="product-detail__cooking-item">
+                            <img src="img/hat.svg" alt="">
+                            <span>сложно</span>
+                        </div>
+                        <div class="product-detail__cooking-item">
+                            <img src="img/users.svg" alt="">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="product-detail__calories">
+                        <div>
+                            <div class="product-detail__calories-title">Пищевая и энергитическая ценность (100 г)</div>
+                            <div class="product-detail__calories-wrap">
+                                <div class="product-detail__calories-item">
+                                    <div class="product-detail__calories-num">16</div>
+                                    <div class="product-detail__calories-text">Белки</div>
+                                </div>
+                                <div class="product-detail__calories-item">
+                                    <div class="product-detail__calories-num">9</div>
+                                    <div class="product-detail__calories-text">Жиры</div>
+                                </div>
+                                <div class="product-detail__calories-item">
+                                    <div class="product-detail__calories-num">11</div>
+                                    <div class="product-detail__calories-text">Углеводы</div>
+                                </div>
+                                <div class="product-detail__calories-item">
+                                    <div class="product-detail__calories-num">55</div>
+                                    <div class="product-detail__calories-text">Ккал</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail__desc">Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда. Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого
+                    блюда. Это ароматное мясо с кускусом и овощами, настоящее объедение. Любители вкусно покушать будут в восторге от такого блюда
+                </div>
+            </div>
+
+            <div class="product-detail__ingridients">
+                <div class="product-detail__ingridients-title">Ингредиенты</div>
+                <div class="product-detail__ingridients-item">
+                    <span>Кальмары “Море море”</span>
+                    <strong>500 гр.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Булугр “Агро”</span>
+                    <strong>450 гр.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Томаты свежие “Люкс” </span>
+                    <strong>2 шт.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Шпинат “Белая дача”</span>
+                    <strong>300 гр.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Кальмары “Море море”</span>
+                    <strong>500 гр.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Булугр “Агро”</span>
+                    <strong>450 гр.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Томаты свежие “Люкс” </span>
+                    <strong>2 шт.</strong>
+                </div>
+                <div class="product-detail__ingridients-item">
+                    <span>Шпинат “Белая дача”</span>
+                    <strong>300 гр.</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div id='cityModal' class='modal modal-city fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-city__subtitle">Ваш город</div>
+            <div class="modal-city__title">Москва</div>
+            <div class="modal-city__buttons">
+                <button class="modal-city__yes" data-dismiss='modal'>угадали!</button>
+                <button class="modal-city__no">нет</button>
+            </div>
+        </div>
+    </div>
+
+    <div id='cityModal2' class='modal modal-city modal-city2 fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form action="" class="modal-city__form">
+                <div class="modal-city__form-group">
+                    <label for="">Введите ваш город</label>
+                    <input type="text">
+                </div>
+                <div class="modal-city__form-group">
+                    <label for="">Введите вашу улицу</label>
+                    <input type="text">
+                </div>
+                <div class="modal-city__form-group">
+                    <label for="">Введите номер дома</label>
+                    <input type="text">
+                </div>
+                <button data-dismiss='modal' type="button" class="modal-city__yes" data-dismiss='modal'>сохранить</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

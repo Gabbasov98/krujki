@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>профиль</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/tagify.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="profile-sidebar__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar-bg"></div>
+                <div class="profile-sidebar">
+
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>
+                            Редактировать профиль
+                        </span>
+                        <img src="img/edit-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Создать рецепт</span>
+                        <img src="img/add-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Рейтинг и друзья</span>
+                        <img src="img/referal-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Финансы</span>
+                        <img src="img/finance.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Выйти</span>
+                        <img src="img/logout-green.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-content">
+                    <div class="profile-create">
+                        <div class="profile-create__left">
+                            <form>
+                                <div class="profile-create__top">
+                                    <p class="profile__title profile-create__title">Создать рецепт</p>
+                                    <a href="" class="profile-create__top-link">черновики</a>
+                                </div>
+                                <div class="profile-create__img">
+                                    <input type="file" name="" id="">
+                                    <button class="profile-create__img-btn" type="button">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4.00001L12 12M12 12L12 20M12 12L20 12M12 12L4 12" stroke="white" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                    <span class="profile-create__img-link">загрузить фото</span>
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Тип блюда</label>
+                                    <div class="profile-edit__form-group-select">
+                                        <select name="" id="">
+                                            <option selected disabled hidden value="выберете тип блюда">выберете тип блюда</option>
+                                            <option value="Тип 1">Тип 1</option>
+                                            <option value="Тип 2">Тип 2</option>
+                                            <option value="Тип 3">Тип 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <div class="add__tags">
+                                        <input name="tags" id="tag" value="курин,грудк">
+                                    </div>
+                                    <label for="">Теги</label>
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <input type="text" placeholder="Название блюда">
+                                    <label for="">Название</label>
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <textarea placeholder="Описание блюда"></textarea>
+                                    <label for="">Описание</label>
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <input type="text" placeholder="Введите время готовки">
+                                    <label for="">Время приготовления</label>
+                                </div>
+                                <div class="profile-create__form-check"><input type="checkbox" id="marinate"><label for="marinate">Требует дополнительной подготовки (маринования и т.д.)</label></div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Сложность</label>
+                                    <div class="profile-edit__form-group-select">
+                                        <select name="" id="">
+                                            <option selected disabled hidden value="Выберет сложность рецепта">Выберет сложность рецепта</option>
+                                            <option value="Тип 1">Тип 1</option>
+                                            <option value="Тип 2">Тип 2</option>
+                                            <option value="Тип 3">Тип 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile-edit__form-group profile-create__form-kkal">
+                                    <input type="number" placeholder="Белки"><span>г.</span>
+                                    <input type="number" placeholder="Жиры"><span>г.</span>
+                                    <input type="number" placeholder="Углев."><span>г.</span>
+                                    <input type="number" placeholder="Ккал">
+                                    <label for="">Пищевая ценность</label></div>
+                                <div class="profile-edit__form-group">
+                                    <input type="text" placeholder="Ссылка на видео">
+                                    <label for="">Ссылка на видео</label>
+                                </div>
+                                <div class="profile-edit__form-group profile-edit__form-group--hint">
+                                    <label for="">Выбрать ритейлера</label>
+                                    <div class="profile-edit__form-group-select">
+                                        <select name="" id="">
+                                            <option selected="" disabled="" hidden="" value="Выберет статус">Выберет бренд</option>
+                                            <option value="Паста “Барилла” и еще 1">Сбермаркет 1</option>
+                                            <option value="Паста “Барилла” и еще 2">Сбермаркет  2</option>
+                                            <option value="Паста “Барилла” и еще 3">Сбермаркет  3</option>
+                                        </select>
+                                    </div>
+                                    <div class="profile-edit__form-group-hint">Вы можете выбрать приоритетные бренды, Для всех реценптов будут предлагаться только они</div>
+                                </div>
+
+                                <div class="profile-edit__form-group profile-edit__form-group--hint">
+                                    <label for="">Выбрать <br> бренд</label>
+                                    <div class="profile-edit__form-group-select">
+                                        <select name="" id="">
+                                            <option selected="" disabled="" hidden="" value="Выберет статус">Выберет бренд</option>
+                                            <option value="Паста “Барилла” и еще 1">Паста “Барилла” 1</option>
+                                            <option value="Паста “Барилла” и еще 2">Паста “Барилла” 2</option>
+                                            <option value="Паста “Барилла” и еще 3">Паста “Барилла” 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="profile-edit__form-group-hint">Вы можете выбрать приоритетные бренды, Для всех реценптов будут предлагаться только они</div>
+                                </div>
+
+                                <div class="profile-edit__form-group profile-create__form-ingridient"><input type="text" placeholder="Начните вводить название" class="profile-create__form-ingridient-search"><input type="text" placeholder="введите вес" class="profile-create__form-ingridient-weight"><select class="profile-create__form-ingridient-unit"><option value="кг.">кг.</option><option value="гр.">гр.</option><option value="л.">л.</option><option value="мл.">мл.</option><option value="шт.">шт.</option></select>
+                                    <button class="profile-create__form-ingridient-btn"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.00003 11.1701L1.83003 7.00009L0.410034 8.41009L6.00003 14.0001L18 2.00009L16.59 0.590088L6.00003 11.1701Z" fill="#51B1A6"></path></svg></button>
+                                    <label for="">Ингредиенты</label>
+                                </div>
+                                <div class="profile-create__ingridients">
+                                    <div class="profile-create__ingridients-item"><button><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99375 0.125L4.5 3.61875L1.00625 0.125L0.125 1.00625L3.61875 4.5L0.125 7.99375L1.00625 8.875L4.5 5.38125L7.99375 8.875L8.875 7.99375L5.38125 4.5L8.875 1.00625L7.99375 0.125Z" fill="#D4145A"></path></svg></button>
+                                        <p><strong>Картофель</strong><span>400 гр.</span></p>
+                                    </div>
+                                    <div class="profile-create__ingridients-item"><button><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99375 0.125L4.5 3.61875L1.00625 0.125L0.125 1.00625L3.61875 4.5L0.125 7.99375L1.00625 8.875L4.5 5.38125L7.99375 8.875L8.875 7.99375L5.38125 4.5L8.875 1.00625L7.99375 0.125Z" fill="#D4145A"></path></svg></button>
+                                        <p><strong>Оливковое масло, первый отжим, Экстра верджин “Оиллукоил”</strong><span>400 гр.</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-create__nav">
+                                    <button class="profile-create__nav-btn-green">опубликовать</button>
+                                    <button class="profile-create__nav-btn">сохранить как черновик</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/tagify.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

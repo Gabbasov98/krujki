@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>профиль</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="profile-sidebar__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar-bg"></div>
+                <div class="profile-sidebar">
+                    <div class="profile-sidebar__logo">
+                        <img src="img/eco.png" alt="">
+                        <span>ecomarket</span>
+                    </div>
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Настройки</span>
+                        <img src="img/settings2.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="profile-content">
+                    <div class="shop-stat">
+                        <p class="profile__title">Статистика</p>
+                        <div class="shop-stat__top">
+                            <div class="profile-edit__form-group">
+                                <label for="">Период</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет статус</option>
+                                        <option value="">09.08.2021 - 31.10.2021</option>
+                                        <option value="">09.08.2021 - 31.10.2021 2</option>
+                                        <option value="">09.08.2021 - 31.10.2021 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">Выбрать <br> блогера</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет статус</option>
+                                        <option value="">@mamanakehne 1</option>
+                                        <option value="">@mamanakehne 2</option>
+                                        <option value="">@mamanakehne 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-stat__checks">
+                            <div class="shop-stat__check">
+                                <input type='checkbox' class='checkbox' id='shop-stat1' />
+                                <label for='shop-stat1'>
+                                    <span>просмотры корзины</span>
+                                    <i style="background: #FF8A35;"></i>
+                                </label>
+                            </div>
+                            <div class="shop-stat__check">
+                                <input type='checkbox' class='checkbox' id='shop-stat2' />
+                                <label for='shop-stat2'>
+                                    <span>редиректы на магазин</span>
+                                    <i style="background: #6B53FD;"></i>
+                                </label>
+                            </div>
+                            <div class="shop-stat__check">
+                                <input type='checkbox' class='checkbox' id='shop-stat3' />
+                                <label for='shop-stat3'>
+                                    <span>оплаченные корзины</span>
+                                    <i style="background: #51B1A6;"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-stat__buttons">
+                            <button class="shop-stat__show">показать</button>
+                            <button class="shop-stat__refresh">сбросить</button>
+                        </div>
+                        <div class="shop-stat__chart-block">
+                            <div class="shop-stat__chart">
+                                <div class="shop-stat__chart-title">09.08.2021 - 18.08.2021 | @mamanakuhne и еще 3</div>
+                                <div class="shop-stat__chart-inner">
+                                    <div id="shopChart"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-stat__table-block">
+                            <div class="shop-stat__table">
+                                <div class="shop-stat__table-head">
+                                    <div>Аккаунт блогера</div>
+                                    <div>Просмотры корзин</div>
+                                    <div>Редиректы на магазин</div>
+                                    <div>CTR</div>
+                                    <div>Оплаченые корзины</div>
+                                </div>
+                                <div class="shop-stat__table-items">
+                                    <div class="shop-stat__table-item">
+                                        <div>
+                                            <span>@mamanakuhne</span>
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 7.2V10.8C10 11.1183 9.87357 11.4235 9.64853 11.6485C9.42348 11.8736 9.11826 12 8.8 12H2.2C1.88174 12 1.57652 11.8736 1.35147 11.6485C1.12643 11.4235 1 11.1183 1 10.8V4.2C1 3.88174 1.12643 3.57652 1.35147 3.35147C1.57652 3.12643 1.88174 3 2.2 3H5.8" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 1H12V5" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5 8L12 1" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div>289</div>
+                                        <div>59</div>
+                                        <div>0.40%</div>
+                                        <div>17</div>
+                                    </div>
+                                    <div class="shop-stat__table-item">
+                                        <div>
+                                            <span>@gotovimvmeste</span>
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 7.2V10.8C10 11.1183 9.87357 11.4235 9.64853 11.6485C9.42348 11.8736 9.11826 12 8.8 12H2.2C1.88174 12 1.57652 11.8736 1.35147 11.6485C1.12643 11.4235 1 11.1183 1 10.8V4.2C1 3.88174 1.12643 3.57652 1.35147 3.35147C1.57652 3.12643 1.88174 3 2.2 3H5.8" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 1H12V5" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5 8L12 1" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div>289</div>
+                                        <div>59</div>
+                                        <div>0.40%</div>
+                                        <div>17</div>
+                                    </div>
+                                    <div class="shop-stat__table-item">
+                                        <div>
+                                            <span>@coockindgod</span>
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 7.2V10.8C10 11.1183 9.87357 11.4235 9.64853 11.6485C9.42348 11.8736 9.11826 12 8.8 12H2.2C1.88174 12 1.57652 11.8736 1.35147 11.6485C1.12643 11.4235 1 11.1183 1 10.8V4.2C1 3.88174 1.12643 3.57652 1.35147 3.35147C1.57652 3.12643 1.88174 3 2.2 3H5.8" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 1H12V5" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5 8L12 1" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div>289</div>
+                                        <div>59</div>
+                                        <div>0.40%</div>
+                                        <div>17</div>
+                                    </div>
+                                    <div class="shop-stat__table-item">
+                                        <div>
+                                            <span>@iamtasty</span>
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 7.2V10.8C10 11.1183 9.87357 11.4235 9.64853 11.6485C9.42348 11.8736 9.11826 12 8.8 12H2.2C1.88174 12 1.57652 11.8736 1.35147 11.6485C1.12643 11.4235 1 11.1183 1 10.8V4.2C1 3.88174 1.12643 3.57652 1.35147 3.35147C1.57652 3.12643 1.88174 3 2.2 3H5.8" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 1H12V5" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5 8L12 1" stroke="#FF8A35" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div>289</div>
+                                        <div>59</div>
+                                        <div>0.40%</div>
+                                        <div>17</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-revenue">
+                            <div class="stat-revenue__title">Сумма редиректов корзины</div>
+                            <div class="stat-revenue__hint">Поясняющий текст что это за сумма</div>
+                            <div class="stat-revenue__badge">17 546₽</div>
+                        </div>
+                        <div class="stat-revenue">
+                            <div class="stat-revenue__title">Сумма оплаченных корзин</div>
+                            <div class="stat-revenue__hint">Поясняющий текст что это за сумма</div>
+                            <div class="stat-revenue__badge">9 526₽</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

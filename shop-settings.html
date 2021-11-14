@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>профиль</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="profile-sidebar__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar-bg"></div>
+                <div class="profile-sidebar">
+                    <div class="profile-sidebar__logo">
+                        <img src="img/eco.png" alt="">
+                        <span>ecomarket</span>
+                    </div>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link  profile-sidebar__link--active">
+                        <span>Настройки</span>
+                        <img src="img/settings2.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="profile-content">
+                    <div class="profile-edit">
+                        <p class="profile-edit__title">Редактировать профиль</p>
+                        <form class="profile-edit__form">
+
+                            <div class="profile-edit__form-group profile-edit__form-group--mail">
+                                <label for="">Имя пользователя</label>
+                                <input type="email">
+                                <div class="profile-edit__confirmed">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C6.47967 21.994 2.00606 17.5204 2 12V11.8C2.10993 6.30455 6.63459 1.92797 12.1307 2.0009C17.6268 2.07382 22.0337 6.5689 21.9978 12.0654C21.9619 17.5618 17.4966 21.9989 12 22ZM7.41 11.59L6 13L10 17L18 9.00002L16.59 7.58002L10 14.17L7.41 11.59Z" fill="#FF8A35"></path>
+                                    </svg>
+                                    <span>подтвержден</span>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group profile-edit__form-group--phone">
+                                <label for="">Телефон</label>
+                                <input type="tel">
+                                <div class="profile-edit__confirmed">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C6.47967 21.994 2.00606 17.5204 2 12V11.8C2.10993 6.30455 6.63459 1.92797 12.1307 2.0009C17.6268 2.07382 22.0337 6.5689 21.9978 12.0654C21.9619 17.5618 17.4966 21.9989 12 22ZM7.41 11.59L6 13L10 17L18 9.00002L16.59 7.58002L10 14.17L7.41 11.59Z" fill="#FF8A35"></path>
+                                    </svg>
+                                    <span>подтвержден</span>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">Должность</label>
+                                <input type="text">
+                            </div>
+                            <div class="profile-edit__form-group profile-edit__form-group--phone">
+                                <label for="">Сайт</label>
+                                <input type="tel">
+                                <div class="profile-edit__confirmed">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C6.47967 21.994 2.00606 17.5204 2 12V11.8C2.10993 6.30455 6.63459 1.92797 12.1307 2.0009C17.6268 2.07382 22.0337 6.5689 21.9978 12.0654C21.9619 17.5618 17.4966 21.9989 12 22ZM7.41 11.59L6 13L10 17L18 9.00002L16.59 7.58002L10 14.17L7.41 11.59Z" fill="#FF8A35"></path>
+                                    </svg>
+                                    <span>подтвержден</span>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group profile-edit__form-group--phone">
+                                <label for="">E-mail</label>
+                                <input type="tel">
+                                <div class="profile-edit__not-confirmed">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6B53FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 9L9 15" stroke="#6B53FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 9L15 15" stroke="#6B53FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>не подтвержден</span>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group-hint profile-edit__form-group-hint--static">Адрес электронной почты должен быть действительным адресом электронной почты. то есть sample@username.com. Если вы измените новый адрес электронной почты, то электронная почта должна быть подтверждена.</div>
+                            <div class="profile-edit__form-group">
+                                <label for="">Пароль</label>
+                                <input type="password">
+                            </div>
+                            <div class="profile-edit__form-group-hint profile-edit__form-group-hint--static">Пароль должен содержать более 6 символов.</div>
+
+
+                            <div class="profile-edit__input-img">
+                                <div class="profile-edit__input-img-left">
+                                    <img src="img/ec02.jpg" alt="">
+                                </div>
+                                <div class="profile-edit__input-img-file">
+                                    <input type="file" id="avatar-input">
+                                    <label for="avatar-input">загрузить логотип</label>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__form-group">
+                                <label for="">Auth key</label>
+                                <input type="text">
+                            </div>
+                            <div class="profile-edit__form-group-hint profile-edit__form-group-hint--static">гененируется автоматически</div>
+
+                            <div class="profile-edit__form-group">
+                                <label for="">Название в форме</label>
+                                <input type="text">
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">URL корзины</label>
+                                <input type="text">
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">URL фид товаров</label>
+                                <input type="text">
+                            </div>
+
+
+                            <button class="profile-edit__form-btn">сохранить</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

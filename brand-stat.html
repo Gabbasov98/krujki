@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>профиль</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="profile-sidebar__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+                <div class="profile-sidebar-bg"></div>
+                <div class="profile-sidebar">
+                    <div class="profile-sidebar__logo">
+                        <img src="img/ec02.jpg" alt="">
+                        <span>ecomarket</span>
+                    </div>
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Настройки</span>
+                        <img src="img/settings2.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="profile-content">
+                    <div class="shop-stat">
+                        <p class="profile__title">Статистика</p>
+                        <div class="shop-stat__top">
+                            <div class="profile-edit__form-group">
+                                <label for="">Период</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет статус</option>
+                                        <option value="">09.08.2021 - 31.10.2021</option>
+                                        <option value="">09.08.2021 - 31.10.2021 2</option>
+                                        <option value="">09.08.2021 - 31.10.2021 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">Выбрать <br> блогера</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет статус</option>
+                                        <option value="">@mamanakehne 1</option>
+                                        <option value="">@mamanakehne 2</option>
+                                        <option value="">@mamanakehne 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-edit__form-group">
+                            <label for="">Выбрать <br> магазин</label>
+                            <div class="profile-edit__form-group-select">
+                                <select name="" id="">
+                                    <option selected="" disabled="" hidden="" value="Выберет статус">Выберет статус</option>
+                                    <option value="">@mamanakehne 1</option>
+                                    <option value="">@mamanakehne 2</option>
+                                    <option value="">@mamanakehne 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="shop-stat__checks">
+                            <div class="shop-stat__check">
+                                <input type='checkbox' class='checkbox' id='shop-stat1' />
+                                <label for='shop-stat1'>
+                                    <span>первая позиция в корзине</span>
+                                    <i style="background: #FF8A35;"></i>
+                                </label>
+                            </div>
+                            <div class="shop-stat__check">
+                                <input type='checkbox' class='checkbox' id='shop-stat2' />
+                                <label for='shop-stat2'>
+                                    <span>в списке товаров корзины</span>
+                                    <i style="background: #6B53FD;"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-stat__buttons">
+                            <button class="shop-stat__show">показать</button>
+                            <button class="shop-stat__refresh">сбросить</button>
+                        </div>
+                        <div class="shop-stat__chart-block">
+                            <div class="shop-stat__chart">
+                                <div class="shop-stat__chart-title">09.08.2021 - 18.08.2021 | Сбермаркет | @mamanakuhne и еще 3</div>
+                                <div class="shop-stat__chart-inner">
+                                    <div id="brandChart"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-stat__nav">
+                            <div class="shop-stat__checks">
+                                <div class="shop-stat__check">
+                                    <input type="checkbox" class="checkbox" id="shop-stat6">
+                                    <label for="shop-stat6">
+                                        <span>просмотры корзины</span>
+                                        <i style="background: #FF8A35;"></i>
+                                    </label>
+                                </div>
+                                <div class="shop-stat__check">
+                                    <input type="checkbox" class="checkbox" id="shop-stat7">
+                                    <label for="shop-stat7">
+                                        <span>редиректы в магазин</span>
+                                        <i style="background: #6B53FD;"></i>
+                                    </label>
+                                </div>
+                                <div class="shop-stat__check">
+                                    <input type="checkbox" class="checkbox" id="shop-stat8">
+                                    <label for="shop-stat8">
+                                        <span>оплаченные корзины</span>
+                                        <i style="background: #51B1A6;"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-stat__buttons">
+                                <button class="shop-stat__show">показать</button>
+                                <button class="shop-stat__refresh">сбросить</button>
+                            </div>
+                        </div>
+                        <div class="shop-stat__chart-block">
+                            <div class="shop-stat__chart">
+                                <div class="shop-stat__chart-title">09.08.2021 - 18.08.2021 | @mamanakuhne и еще 3</div>
+                                <div class="shop-stat__chart-inner">
+                                    <div id="brandChart2"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>профиль</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='custom-container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__desc">
+                        Заказ продуктов по рецептам блогеров
+                    </div>
+                </div>
+                <div class="header__right">
+                    <button class="profile-sidebar__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='profile'>
+        <div class='custom-container'>
+            <div class='profile__inner'>
+
+                <div class="profile-sidebar-bg"></div>
+                <div class="profile-sidebar">
+
+                    <a href="" class="profile-sidebar__link profile-sidebar__link--active">
+                        <span>
+                            Редактировать профиль
+                        </span>
+                        <img src="img/edit-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Создать рецепт</span>
+                        <img src="img/add-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Рейтинг и друзья</span>
+                        <img src="img/referal-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Статистика</span>
+                        <img src="img/stat-green.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Финансы</span>
+                        <img src="img/finance.svg" alt="">
+                    </a>
+                    <a href="" class="profile-sidebar__link">
+                        <span>Выйти</span>
+                        <img src="img/logout-green.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile-content">
+                    <div class="profile-edit">
+                        <p class="profile-edit__title">Редактировать профиль</p>
+                        <form class="profile-edit__form">
+                            <div class="profile-edit__form-group">
+                                <label for="">Ваш ник</label>
+                                <input type="text">
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">Ваше имя</label>
+                                <input type="text">
+                            </div>
+                            <div class="profile-edit__form-group profile-edit__form-group--pass">
+                                <label for="">Пароль</label>
+                                <input type="password">
+                                <a href="" class="profile-edit__password-btn">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0833 3.66669H3.66659C3.18036 3.66669 2.71404 3.85984 2.37022 4.20366C2.02641 4.54747 1.83325 5.01379 1.83325 5.50002V18.3334C1.83325 18.8196 2.02641 19.2859 2.37022 19.6297C2.71404 19.9735 3.18036 20.1667 3.66659 20.1667H16.4999C16.9861 20.1667 17.4525 19.9735 17.7963 19.6297C18.1401 19.2859 18.3333 18.8196 18.3333 18.3334V11.9167" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.9583 2.29165C17.3229 1.92698 17.8175 1.72211 18.3333 1.72211C18.849 1.72211 19.3436 1.92698 19.7082 2.29165C20.0729 2.65632 20.2778 3.15093 20.2778 3.66665C20.2778 4.18238 20.0729 4.67698 19.7082 5.04165L10.9999 13.75L7.33325 14.6666L8.24992 11L16.9583 2.29165Z" stroke="#FF8A35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>изменить</span>
+                                </a>
+                            </div>
+                            <div class="profile-edit__form-group">
+                                <label for="">Сложность</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет статус</option>
+                                        <option value="Самозанятый 1">Самозанятый 1</option>
+                                        <option value="Самозанятый 2">Самозанятый 2</option>
+                                        <option value="Самозанятый 3">Самозанятый 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__input-img">
+                                <div class="profile-edit__input-img-left">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <div class="profile-edit__input-img-file">
+                                    <input type="file" id="avatar-input">
+                                    <label for="avatar-input">сменить фото профиля</label>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__input-img">
+                                <div class="profile-edit__input-img-left">
+                                    <img src="img/bloger-bg-small.png" alt="">
+                                </div>
+                                <div class="profile-edit__input-img-file">
+                                    <input type="file" id="bg-input1">
+                                    <label for="bg-input1">сменить шапку в каталоге</label>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__input-img">
+                                <div class="profile-edit__input-img-left">
+                                    <img src="img/bloger-bg-small.png" alt="">
+                                </div>
+                                <div class="profile-edit__input-img-file">
+                                    <input type="file" id="bg-input2">
+                                    <label for="bg-input2">ссменить шапку в корзине</label>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__form-group">
+                                <label for="">О себе</label>
+                                <textarea></textarea>
+                            </div>
+
+                            <div class="profile-edit__form-group profile-edit__form-group--phone">
+                                <label for="">Телефон</label>
+                                <input type="tel">
+                                <div class="profile-edit__confirmed">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C6.47967 21.994 2.00606 17.5204 2 12V11.8C2.10993 6.30455 6.63459 1.92797 12.1307 2.0009C17.6268 2.07382 22.0337 6.5689 21.9978 12.0654C21.9619 17.5618 17.4966 21.9989 12 22ZM7.41 11.59L6 13L10 17L18 9.00002L16.59 7.58002L10 14.17L7.41 11.59Z" fill="#FF8A35"/>
+                                    </svg>
+                                    <span>подтвержден</span>
+                                </div>
+                            </div>
+                            <div class="profile-edit__form-group profile-edit__form-group--mail">
+                                <label for="">Почта</label>
+                                <input type="email">
+                                <div class="profile-edit__confirmed">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C6.47967 21.994 2.00606 17.5204 2 12V11.8C2.10993 6.30455 6.63459 1.92797 12.1307 2.0009C17.6268 2.07382 22.0337 6.5689 21.9978 12.0654C21.9619 17.5618 17.4966 21.9989 12 22ZM7.41 11.59L6 13L10 17L18 9.00002L16.59 7.58002L10 14.17L7.41 11.59Z" fill="#FF8A35"/>
+                                    </svg>
+                                    <span>подтвержден</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-edit__form-group profile-edit__form-group--hint">
+                                <label for="">Выбрать ритейлера</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет бренд</option>
+                                        <option value="Паста “Барилла” и еще 1">Сбермаркет 1</option>
+                                        <option value="Паста “Барилла” и еще 2">Сбермаркет  2</option>
+                                        <option value="Паста “Барилла” и еще 3">Сбермаркет  3</option>
+                                    </select>
+                                </div>
+                                <div class="profile-edit__form-group-hint">Вы можете выбрать приоритетные бренды, Для всех реценптов будут предлагаться только они</div>
+                            </div>
+
+                            <div class="profile-edit__form-group profile-edit__form-group--hint">
+                                <label for="">Выбрать <br> бренд</label>
+                                <div class="profile-edit__form-group-select">
+                                    <select name="" id="">
+                                        <option selected="" disabled="" hidden="" value="Выберет статус">Выберет бренд</option>
+                                        <option value="Паста “Барилла” и еще 1">Паста “Барилла” 1</option>
+                                        <option value="Паста “Барилла” и еще 2">Паста “Барилла” 2</option>
+                                        <option value="Паста “Барилла” и еще 3">Паста “Барилла” 3</option>
+                                    </select>
+                                </div>
+                                <div class="profile-edit__form-group-hint">Вы можете выбрать приоритетные бренды, Для всех реценптов будут предлагаться только они</div>
+                            </div>
+
+                            <div class="profile-edit__form-socials">
+                                <div class="profile-edit__form-group">
+                                    <label for="">Twitter</label>
+                                    <input type="text">
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Facebook</label>
+                                    <input type="text">
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Instagram</label>
+                                    <input type="text">
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Youtube</label>
+                                    <input type="text">
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Tik-Tok</label>
+                                    <input type="text">
+                                </div>
+                                <div class="profile-edit__form-group">
+                                    <label for="">Patreon</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <button class="profile-edit__form-btn">сохранить</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
