@@ -247,15 +247,20 @@ $(document).ready(function() {
     $('input[type="tel"]').mask('+7 (999) 999-99-99', { placeholder: '+7 (___) ___ - __ - __' });
     cartCalc()
 
-    var tag1 = document.querySelector("#tag");
-    var tag2 = document.querySelector("#tag2");
+    if (document.querySelector("#tag")) {
+        var tag2 = document.querySelector("#tag");
+        new Tagify(tag1);
+    }
+    if (document.querySelector("#tag2")) {
+        var tag2 = document.querySelector("#tag2");
+        new Tagify(tag2);
+    }
 
-    new Tagify(tag1);
-    new Tagify(tag2);
+
 
     // var input = document.querySelector('input[name=tags]')
 
-    tagify = new Tagify(input);
+    // tagify = new Tagify(input);
 
     if (document.getElementById("shopChart")) {
         shopStatChart()

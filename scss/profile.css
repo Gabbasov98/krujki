@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$green".
-        on line 783 of D:\work\freelance\krujki\scss\profile.scss
+        on line 784 of D:\work\freelance\krujki\scss\profile.scss
 
-778:                 line-height: 140%;
-779:                 padding: 0 15px 0 48px;
-780:                 &:focus,
-781:                 &:active+svg {
-782:                     path {
-783:                         stroke: $green;
-784:                     }
-785:                 }
-786:             }
-787:             svg {
-788:                 position: absolute;
+779:                 line-height: 140%;
+780:                 padding: 0 15px 0 48px;
+781:                 &:focus,
+782:                 &:active+svg {
+783:                     path {
+784:                         stroke: $green;
+785:                     }
+786:                 }
+787:             }
+788:             svg {
+789:                 position: absolute;
 
 Backtrace:
-D:\work\freelance\krujki\scss\profile.scss:783
+D:\work\freelance\krujki\scss\profile.scss:784
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -117,4 +117,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 783 of D:\work\freelance\krujki\scss\profile.scss\A \A 778:                 line-height: 140%;\A 779:                 padding: 0 15px 0 48px;\A 780:                 &:focus,\A 781:                 &:active+svg {\A 782:                     path {\A 783:                         stroke: $green;\A 784:                     }\A 785:                 }\A 786:             }\A 787:             svg {\A 788:                 position: absolute;"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 784 of D:\work\freelance\krujki\scss\profile.scss\A \A 779:                 line-height: 140%;\A 780:                 padding: 0 15px 0 48px;\A 781:                 &:focus,\A 782:                 &:active+svg {\A 783:                     path {\A 784:                         stroke: $green;\A 785:                     }\A 786:                 }\A 787:             }\A 788:             svg {\A 789:                 position: absolute;"; }

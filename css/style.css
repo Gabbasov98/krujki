@@ -3004,6 +3004,7 @@ select:active {
 }
 .profile__inner {
   display: flex;
+  min-height: calc(100vh - 111px);
 }
 .profile-content {
   width: calc(100% - 330px);
