@@ -355,7 +355,7 @@ select:active {
   margin-top: 15px;
 }
 .card__tag {
-  width: 90px;
+  padding: 0 10px;
   height: 23px;
   background: #6B53FD;
   border-radius: 40px;
@@ -1165,7 +1165,7 @@ select:active {
   justify-content: center;
   background: #6B53FD;
   border-radius: 65px;
-  width: 145px;
+  padding: 0 18px;
   height: 36px;
   font-weight: 600;
   font-size: 16px;
