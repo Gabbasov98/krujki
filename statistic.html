@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/tagify.css">
+    <link rel="stylesheet" href="css/datarangepicker.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class='header'>
-        <div class='custom-container'>
+        <div class='container'>
             <div class='header__inner'>
                 <div class="header__left">
                     <a href="" class="header__logo">
@@ -46,7 +47,7 @@
     </header>
 
     <section class='profile'>
-        <div class='custom-container'>
+        <div class='container'>
             <div class='profile__inner'>
                 <div class="profile-sidebar-bg"></div>
                 <div class="profile-sidebar">
@@ -84,11 +85,12 @@
                         <div class="profile-edit__form-group">
                             <label for="">Период</label>
                             <div class="profile-edit__form-group-select">
-                                <select name="" id="">
+                                <input id="datepicker" type="text" name="dates">
+                                <!-- <select name="" id="">
                                     <option value="09.08.2021 - 31.10.2021">09.08.2021 - 31.10.2021</option>
                                     <option value="09.08.2021 - 31.10.2021 2">09.08.2021 - 31.10.2021 2</option>
                                     <option value="09.08.2021 - 31.10.2021 3">09.08.2021 - 31.10.2021 3</option>
-                                </select>
+                                </select> -->
                             </div>
                         </div>
                         <div class="profile-edit__form-group">
@@ -227,6 +229,8 @@
     <script src="js/swiper.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/tagify.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/daterangepicker.js"></script>
     <script src="js/index.js"></script>
 </body>
 

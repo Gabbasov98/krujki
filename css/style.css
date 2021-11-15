@@ -133,34 +133,34 @@ i {
   line-height: 100%;
 }
 
-.custom-container {
+.container {
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media (min-width: 1460px) {
-  .custom-container {
+  .container {
     width: 1440px;
   }
 }
 @media (max-width: 1460px) {
-  .custom-container {
+  .container {
     width: 1170px;
   }
 }
 @media (max-width: 1200px) {
-  .custom-container {
+  .container {
     width: 970px;
     padding: 0 10px;
   }
 }
 @media (max-width: 992px) {
-  .custom-container {
+  .container {
     width: 760px;
   }
 }
 @media (max-width: 768px) {
-  .custom-container {
+  .container {
     width: 100%;
   }
 }
@@ -2781,6 +2781,7 @@ select:active {
   flex-grow: 1;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-right: 40px;
 }
 .ingridient-item__right {

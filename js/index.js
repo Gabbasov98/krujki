@@ -248,13 +248,56 @@ $(document).ready(function() {
     cartCalc()
 
     if (document.querySelector("#tag")) {
-        var tag2 = document.querySelector("#tag");
+        var tag1 = document.querySelector("#tag");
         new Tagify(tag1);
     }
     if (document.querySelector("#tag2")) {
         var tag2 = document.querySelector("#tag2");
         new Tagify(tag2);
     }
+
+    if (document.querySelector("#datepicker")) {
+        $('#datepicker').daterangepicker({
+            autoApply: true,
+            "linkedCalendars": false,
+            locale: {
+                "format": "MM.DD.YYYY",
+                "separator": " - ",
+                "applyLabel": "Apply",
+                "cancelLabel": "Cancel",
+                "fromLabel": "From",
+                "toLabel": "To",
+                "customRangeLabel": "Custom",
+                "weekLabel": "W",
+                "daysOfWeek": [
+                    "Вс",
+                    "Пн",
+                    "Вт",
+                    "Ср",
+                    "Чт",
+                    "Пт",
+                    "Сб"
+                ],
+                "monthNames": [
+                    "Январь",
+                    "Февраль",
+                    "Март",
+                    "Апрель",
+                    "Май",
+                    "Июнь",
+                    "Июль",
+                    "Август",
+                    "Сентябрь",
+                    "Октябрь",
+                    "Ноябрь",
+                    "Декабрь"
+                ],
+                "firstDay": 1
+            }
+        });
+    }
+
+
 
 
 
