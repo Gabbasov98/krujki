@@ -255,7 +255,7 @@
     background: #FFFFFF;
     border: 1px solid #E1E5EB;
     border-radius: 15px;
-    padding: 25px 40px;
+    padding: 20px 40px;
     margin-bottom: 10px; }
     .cart-shop-card__item-show--active ~ .cart-shop-card__item-hidden {
       display: block; }
@@ -295,6 +295,73 @@
     background-color: transparent; }
     .cart-shop-card .cart__item-delete {
       margin-right: 0; }
+
+.ingridient-item {
+  display: flex;
+  align-items: center; }
+  .ingridient-item__left {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-right: 40px; }
+  .ingridient-item__right {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-left: 1px solid #C4C9D3;
+    height: 50px; }
+  .ingridient-item__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 107.5%;
+    letter-spacing: -0.02em;
+    color: #D4145A; }
+  .ingridient-item__delete {
+    margin-left: auto; }
+  .ingridient-item__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 107.5%;
+    letter-spacing: -0.02em;
+    color: #24243F; }
+  .ingridient-item__calc {
+    width: 70px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-shrink: 0;
+    margin-left: 30px; }
+    .ingridient-item__calc svg {
+      width: 12px; }
+    .ingridient-item__calc button {
+      height: 100%;
+      width: 22px;
+      background: #F5F7FA;
+      border-radius: 7px;
+      flex-shrink: 0; }
+      .ingridient-item__calc button:hover {
+        background: #FF8A35; }
+        .ingridient-item__calc button:hover path {
+          stroke: #FFF; }
+      .ingridient-item__calc button:disabled {
+        opacity: 0.3;
+        background-color: #ccc;
+        pointer-events: none; }
+      .ingridient-item__calc button path {
+        stroke: #FF8A35; }
+    .ingridient-item__calc input {
+      width: calc(100% - 44px);
+      border: none;
+      background-color: transparent;
+      text-align: center;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      color: #24243F; }
 
 @media (max-width: 1460px) {
   .cart__right {
@@ -474,5 +541,18 @@
         line-height: 107.5%; }
       .cart-shop-card__sub-price {
         font-size: 14px; } }
+@media screen and (max-width: 768px) {
+  .ingridient-item__left {
+    padding-right: 14px; }
+  .ingridient-item__right {
+    width: 110px;
+    padding-left: 14px; }
+  .ingridient-item__price {
+    font-size: 16px; }
+  .ingridient-item__title {
+    font-size: 12px;
+    line-height: 107.5%; }
+  .ingridient-item__calc {
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=cart.css.map */

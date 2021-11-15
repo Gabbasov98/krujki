@@ -313,7 +313,7 @@
         background: #FFFFFF;
         border: 1px solid #E1E5EB;
         border-radius: 15px;
-        padding: 25px 40px;
+        padding: 20px 40px;
         margin-bottom: 10px;
         &-show--active {
             &~.cart-shop-card__item-hidden {
@@ -365,6 +365,87 @@
         background-color: transparent;
         &-delete {
             margin-right: 0;
+        }
+    }
+}
+
+.ingridient-item {
+    display: flex;
+    align-items: center;
+    &__left {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+    }
+    &__right {
+        width: 180px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        border-left: 1px solid #C4C9D3;
+        height: 50px;
+    }
+    &__price {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 107.5%;
+        letter-spacing: -0.02em;
+        color: #D4145A;
+    }
+    &__delete {
+        margin-left: auto;
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 107.5%;
+        letter-spacing: -0.02em;
+        color: #24243F;
+    }
+    &__calc {
+        width: 70px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        flex-shrink: 0;
+        margin-left: 30px;
+        svg {
+            width: 12px;
+        }
+        button {
+            height: 100%;
+            width: 22px;
+            background: #F5F7FA;
+            border-radius: 7px;
+            flex-shrink: 0;
+            &:hover {
+                background: #FF8A35;
+                path {
+                    stroke: #FFF;
+                }
+            }
+            &:disabled {
+                opacity: 0.3;
+                background-color: #ccc;
+                pointer-events: none;
+            }
+            path {
+                stroke: #FF8A35;
+            }
+        }
+        input {
+            width: calc(100% - 44px);
+            border: none;
+            background-color: transparent;
+            text-align: center;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: #24243F;
         }
     }
 }
@@ -604,6 +685,28 @@
             &-price {
                 font-size: 14px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ingridient-item {
+        &__left {
+            padding-right: 14px;
+        }
+        &__right {
+            width: 110px;
+            padding-left: 14px;
+        }
+        &__price {
+            font-size: 16px;
+        }
+        &__title {
+            font-size: 12px;
+            line-height: 107.5%;
+        }
+        &__calc {
+            margin-left: 10px;
         }
     }
 }
