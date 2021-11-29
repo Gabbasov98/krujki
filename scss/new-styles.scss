@@ -400,6 +400,10 @@ input {
     }
 }
 
+.mt-2 {
+    margin-top: 11px;
+}
+
 @media screen and (max-width: 1460px) {
     .header {
         &__cart {
