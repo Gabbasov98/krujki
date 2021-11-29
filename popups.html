@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить ингредиент</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/tagify.css">
+    <link rel="stylesheet" href="css/datarangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-styles.css">
+</head>
+<style>
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .test-btn {
+        width: 200px;
+        height: 40px;
+        border: 2px solid #000;
+    }
+    
+    body {
+        /* background: #000 !important; */
+    }
+</style>
+
+<body>
+    <div class="buttons">
+        <button class="test-btn" data-toggle="modal" data-target="#cityModal">
+            modal 1
+        </button>
+        <button class="test-btn" data-toggle="modal" data-target="#cityModal2">
+            modal 2
+        </button>
+        <button class="test-btn" data-toggle="modal" data-target="#recipeModal">
+            modal 3
+        </button>
+        <button class="test-btn" data-toggle="modal" data-target="#recipeModal2">
+            modal 4
+        </button>
+        <button class="test-btn" data-toggle="modal" data-target="#authModal">
+            modal 5
+        </button>
+        <button class="test-btn" data-toggle="modal" data-target="#authModal2">
+            modal 6
+        </button>
+    </div>
+
+
+    <div id='recipeModal' class='modal modal-recipe fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-recipe__icon">
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.2851 9.56991H16.273V6.56657C16.273 3.071 13.3969 0.226166 9.86293 0.226166C6.32896 0.226166 3.45286 3.071 3.45286 6.56657V9.56991H2.44074C1.32319 9.56991 0.416504 10.4667 0.416504 11.5721V19.5811C0.416504 20.6865 1.32319 21.5833 2.44074 21.5833H17.2851C18.4027 21.5833 19.3094 20.6865 19.3094 19.5811V11.5721C19.3094 10.4667 18.4027 9.56991 17.2851 9.56991ZM12.8993 9.56991H6.82658V6.56657C6.82658 4.91055 8.18872 3.56322 9.86293 3.56322C11.5371 3.56322 12.8993 4.91055 12.8993 6.56657V9.56991Z" fill="#6B53FD"/>
+                </svg>
+            </div>
+            <div class="modal-recipe__title">Этот рецепт входит в платный сборник</div>
+            <div class="modal-recipe__desc">Разблокируйте этот и другие рецепты входящие в сборник</div>
+            <div class="modal-recipe__subtitle">199₽</div>
+            <a href="" class="modal-recipe__btn">оплатить сборник</a>
+        </div>
+    </div>
+
+    <div id='recipeModal2' class='modal modal-recipe fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-recipe__icon">
+                <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3701 4.03806e-05C13.9248 0.012345 11.1562 2.85062 11.1562 6.29593V9.18752H1.96875C0.881834 9.18752 0 10.0694 0 11.1563V19.0313C0 20.1182 0.881834 21 1.96875 21H16.4062C17.4931 21 18.375 20.1182 18.375 19.0313V11.1563C18.375 10.0694 17.4931 9.18752 16.4062 9.18752H14.4375V6.27132C14.4375 4.6471 15.7377 3.29769 17.3619 3.28128C19.0025 3.26488 20.3437 4.59788 20.3437 6.2344V9.51565C20.3437 10.0612 20.7826 10.5 21.3281 10.5H22.6406C23.1861 10.5 23.625 10.0612 23.625 9.51565V6.2344C23.625 2.7891 20.8154 -0.0122643 17.3701 4.03806e-05Z" fill="#6B53FD"/>
+                </svg>
+            </div>
+            <div class="modal-recipe__title">Оплата прошла <br> успешно!</div>
+            <div class="modal-recipe__desc">Теперь вам доступны все рецепты <br> из сборника</div>
+            <div class="modal-recipe__subtitle">“Новогодний стол”</div>
+            <a href="" class="modal-recipe__btn">перейти к сборнику</a>
+        </div>
+    </div>
+
+    <div id='authModal' class='modal modal-auth fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-auth__icon">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 0C10.5317 0 0 10.5317 0 23C0 35.4683 10.5317 46 23 46C35.4683 46 46 35.4683 46 23C46 10.5317 35.4683 0 23 0ZM23 11.5C26.9721 11.5 29.9 14.4256 29.9 18.4C29.9 22.3744 26.9721 25.3 23 25.3C19.0302 25.3 16.1 22.3744 16.1 18.4C16.1 14.4256 19.0302 11.5 23 11.5ZM11.2562 33.9756C13.3193 30.9396 16.7601 28.9156 20.7 28.9156H25.3C29.2422 28.9156 32.6807 30.9396 34.7438 33.9756C31.8044 37.122 27.6345 39.1 23 39.1C18.3655 39.1 14.1956 37.122 11.2562 33.9756Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="modal-auth__title">Авторизация</div>
+            <div class="modal-auth__desc">Введите ваш номер</div>
+            <div class="modal-auth__phone">
+                <input type="tel">
+            </div>
+            <a href="" class="modal-auth__btn">далее</a>
+        </div>
+    </div>
+
+    <div id='authModal2' class='modal modal-auth fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-auth__icon">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 0C10.5317 0 0 10.5317 0 23C0 35.4683 10.5317 46 23 46C35.4683 46 46 35.4683 46 23C46 10.5317 35.4683 0 23 0ZM23 11.5C26.9721 11.5 29.9 14.4256 29.9 18.4C29.9 22.3744 26.9721 25.3 23 25.3C19.0302 25.3 16.1 22.3744 16.1 18.4C16.1 14.4256 19.0302 11.5 23 11.5ZM11.2562 33.9756C13.3193 30.9396 16.7601 28.9156 20.7 28.9156H25.3C29.2422 28.9156 32.6807 30.9396 34.7438 33.9756C31.8044 37.122 27.6345 39.1 23 39.1C18.3655 39.1 14.1956 37.122 11.2562 33.9756Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="modal-auth__title">Авторизация</div>
+            <div class="modal-auth__desc">Введите код который <br> вы получили в смс</div>
+            <div class="modal-auth__code pincode">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="hidden" name="pincode">
+            </div>
+            <a href="" class="modal-auth__btn">войти</a>
+        </div>
+    </div>
+
+
+    <div id='cityModal' class='modal modal-city fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="modal-city__subtitle">Ваш город</div>
+            <div class="modal-city__title">Москва</div>
+            <div class="modal-city__buttons">
+                <button class="modal-city__yes" data-dismiss='modal'>угадали!</button>
+                <button class="modal-city__no">нет</button>
+            </div>
+        </div>
+    </div>
+
+    <div id='cityModal2' class='modal modal-city modal-city2 fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='close' data-dismiss='modal'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9L9 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form action="" class="modal-city__form">
+                <div class="modal-city__form-group">
+                    <label for="">Введите ваш город</label>
+                    <input type="text">
+                </div>
+                <div class="modal-city__form-group">
+                    <label for="">Введите вашу улицу</label>
+                    <input type="text">
+                </div>
+                <div class="modal-city__form-group">
+                    <label for="">Введите номер дома</label>
+                    <input type="text">
+                </div>
+                <button data-dismiss='modal' type="button" class="modal-city__yes" data-dismiss='modal'>сохранить</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/tagify.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

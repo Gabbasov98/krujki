@@ -244,7 +244,7 @@ function brandStatChart2() {
 
 $(document).ready(function() {
     $(".custom-select").niceSelect()
-    $('input[type="tel"]').mask('+7 (999) 999-99-99', { placeholder: '+7 (___) ___ - __ - __' });
+    $('input[type="tel"]').mask('+7 (999) 999-99-99', { placeholder: '+7 (___) ___-__-__' });
     cartCalc()
 
     if (document.querySelector("#tag")) {
