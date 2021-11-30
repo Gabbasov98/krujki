@@ -240,9 +240,24 @@ function brandStatChart2() {
     chart.render();
 }
 
-
+function slider() {
+    var swiper = new Swiper('.product-detail__img .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // navigation: {
+        //     nextEl: ' .swiper-button-next',
+        //     prevEl: ' .swiper-button-prev',
+        // },
+        pagination: {
+            el: '.product-detail__img .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        }
+    })
+}
 
 $(document).ready(function() {
+    slider()
     $(".custom-select").niceSelect()
     $('input[type="tel"]').mask('+7 (999) 999-99-99', { placeholder: '+7 (___) ___-__-__' });
     cartCalc()

@@ -89,15 +89,26 @@
                                     <p class="profile__title profile-create__title">Создать рецепт</p>
                                     <a href="" class="profile-create__top-link">черновики</a>
                                 </div>
-                                <div class="profile-create__img">
-                                    <input type="file" name="" id="">
-                                    <button class="profile-create__img-btn" type="button">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 4.00001L12 12M12 12L12 20M12 12L20 12M12 12L4 12" stroke="white" stroke-width="2"/>
-                                        </svg>
-                                    </button>
-                                    <span class="profile-create__img-link">загрузить фото</span>
+                                <div class="profile-create__img-wrap">
+                                    <div class="profile-create__img-item">
+                                        <img src="img/recipe1.jpg" alt="">
+                                    </div>
+                                    <div class="profile-create__img-item">
+                                        <img src="img/recipe2.jpg" alt="">
+                                    </div>
+                                    <div class="profile-create__img-add">
+                                        <div class="profile-create__img-add-btn">
+                                            <i>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 4.00001L12 12M12 12L12 20M12 12L20 12M12 12L4 12" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </i>
+                                            <span>добавить фото</span>
+                                            <input type="file" name="" id="">
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="profile-edit__form-group">
                                     <label for="">Тип блюда</label>
                                     <div class="profile-edit__form-group-select">
