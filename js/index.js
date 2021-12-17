@@ -447,6 +447,18 @@ $(document).ready(function() {
 
 
     $("input[type=date]").val();
+
+    $(".card__cart-add").click(function() {
+        $(this).toggleClass("card__cart-add--added")
+    })
+    $(".product-detail__info-btn").click(function() {
+        $(this).toggleClass("card__cart-add--added")
+    })
+
+    $(".cart-shop-card__btn").click(function() {
+        $(this).toggleClass("card__cart-add--added")
+    })
+
 })
 
 
