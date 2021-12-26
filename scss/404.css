@@ -1,8 +1,38 @@
 .error404 {
   text-align: center; }
   .error404__img {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-top: -27px;
+    z-index: -1; }
     .error404__img img {
       max-width: 100%; }
+  .error404__desc {
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    color: #FF8A35;
+    margin-top: -27px; }
+  .error404__back {
+    background: #FF8A35;
+    border-radius: 16px;
+    width: 210px;
+    height: 37px;
+    margin: 39px auto 0;
+    font-size: 17px;
+    line-height: 23px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .error404__back:hover {
+      color: #FFFFFF; }
+
+@media screen and (max-width: 992px) {
+  .error404__img {
+    margin-top: 0; }
+  .error404__desc {
+    margin-top: -12px; }
+  .error404__back {
+    margin-top: 22px; } }
 
 /*# sourceMappingURL=404.css.map */
