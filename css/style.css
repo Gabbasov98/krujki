@@ -5791,6 +5791,14 @@ select:active {
     width: 100%;
     margin-bottom: 6px;
   }
+
+  .product-detail__img {
+    height: unset;
+  }
+  .product-detail__img img {
+    position: static;
+    transform: translate(0, 0);
+  }
 }
 @media screen and (max-width: 768px) {
   .modal-dialog {

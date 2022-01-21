@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$blackLight".
-        on line 70 of D:\work\freelance\krujki\scss\reg.scss
+        on line 70 of D:\work\freelance-old\krujki2\scss\reg.scss
 
 65:             &-text {
 66:                 font-weight: 300;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$blackLight".
 75: 
 
 Backtrace:
-D:\work\freelance\krujki\scss\reg.scss:70
+D:\work\freelance-old\krujki2\scss\reg.scss:70
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -95,4 +95,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blackLight\".\A         on line 70 of D:\work\freelance\krujki\scss\reg.scss\A \A 65:             &-text {\A 66:                 font-weight: 300;\A 67:                 font-size: 14px;\A 68:                 line-height: 19px;\A 69:                 margin-top: 13px;\A 70:                 color: $blackLight;\A 71:             }\A 72:         }\A 73:     }\A 74: }\A 75: "; }
+  content: "Error: Undefined variable: \"$blackLight\".\A         on line 70 of D:\work\freelance-old\krujki2\scss\reg.scss\A \A 65:             &-text {\A 66:                 font-weight: 300;\A 67:                 font-size: 14px;\A 68:                 line-height: 19px;\A 69:                 margin-top: 13px;\A 70:                 color: $blackLight;\A 71:             }\A 72:         }\A 73:     }\A 74: }\A 75: "; }

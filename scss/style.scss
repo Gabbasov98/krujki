@@ -435,6 +435,15 @@ body {
             margin-bottom: 6px;
         }
     }
+    .product-detail {
+        &__img {
+            height: unset;
+            img {
+                position: static;
+                transform: translate(0, 0);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {

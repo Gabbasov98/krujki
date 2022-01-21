@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$green".
-        on line 784 of D:\work\freelance\krujki\scss\profile.scss
+        on line 784 of D:\work\freelance-old\krujki2\scss\profile.scss
 
 779:                 line-height: 140%;
 780:                 padding: 0 15px 0 48px;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$green".
 789:                 position: absolute;
 
 Backtrace:
-D:\work\freelance\krujki\scss\profile.scss:784
+D:\work\freelance-old\krujki2\scss\profile.scss:784
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -117,4 +117,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 784 of D:\work\freelance\krujki\scss\profile.scss\A \A 779:                 line-height: 140%;\A 780:                 padding: 0 15px 0 48px;\A 781:                 &:focus,\A 782:                 &:active+svg {\A 783:                     path {\A 784:                         stroke: $green;\A 785:                     }\A 786:                 }\A 787:             }\A 788:             svg {\A 789:                 position: absolute;"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 784 of D:\work\freelance-old\krujki2\scss\profile.scss\A \A 779:                 line-height: 140%;\A 780:                 padding: 0 15px 0 48px;\A 781:                 &:focus,\A 782:                 &:active+svg {\A 783:                     path {\A 784:                         stroke: $green;\A 785:                     }\A 786:                 }\A 787:             }\A 788:             svg {\A 789:                 position: absolute;"; }
