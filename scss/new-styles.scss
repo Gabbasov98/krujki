@@ -1239,16 +1239,16 @@ body {
     @media screen and (max-width: 992px) {
         display: block;
         margin-top: 25px;
-    }
-    &__cooking {
-        min-height: 65px;
-        width: 100%;
-        padding: 24px 20px;
-    }
-    &__kbzhu {
-        width: 100%;
-        margin: 25px 0 0 0;
-        padding: 16px 32px;
+        &__cooking {
+            min-height: 65px;
+            width: 100%;
+            padding: 24px 20px;
+        }
+        &__kbzhu {
+            width: 100%;
+            margin: 25px 0 0 0;
+            padding: 16px 32px;
+        }
     }
 }
 
