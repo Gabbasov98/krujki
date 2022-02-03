@@ -1181,6 +1181,77 @@ body {
     }
 }
 
+.recipe-info {
+    display: flex;
+    align-items: center;
+    margin-top: 66px;
+    &__cooking {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 448px;
+        min-height: 103px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 0 60px;
+        &-item {
+            font-weight: 500;
+            font-size: 13px;
+            color: #6B53FD;
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 9px;
+            }
+        }
+    }
+    &__kbzhu {
+        padding: 15px 85px;
+        min-height: 103px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        margin-left: 30px;
+        text-align: center;
+        &-title {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #5A5A75;
+        }
+        &-wrap {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-item {
+            &-num {
+                color: #6B53FD;
+                margin-bottom: 5px;
+            }
+            &-num,
+            &-text {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        display: block;
+        margin-top: 25px;
+    }
+    &__cooking {
+        min-height: 65px;
+        width: 100%;
+        padding: 24px 20px;
+    }
+    &__kbzhu {
+        width: 100%;
+        margin: 25px 0 0 0;
+        padding: 16px 32px;
+    }
+}
+
 @media screen and (max-width: 1460px) {
     .header {
         &__cart {
